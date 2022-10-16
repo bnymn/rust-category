@@ -1,5 +1,5 @@
 [package]
-name = "category"
+name = "bnymn-category"
 description = "This package allows you to manage categories of any kind"
 license = "MIT"
 license-file = "LICENSE"

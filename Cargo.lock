@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "category"
+name = "bnymn-category"
 version = "0.1.0"
