@@ -1,5 +1,8 @@
 [package]
 name = "category"
+description = "This package allows you to manage categories of any kind"
+license = "MIT"
+license-file = "LICENSE"
 version = "0.1.0"
 edition = "2021"
 
