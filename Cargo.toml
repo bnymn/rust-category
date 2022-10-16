@@ -3,7 +3,7 @@ name = "bnymn-category"
 description = "This package allows you to manage categories of any kind"
 license = "MIT"
 license-file = "LICENSE"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 repository = "https://github.com/bnymn/category"
 
