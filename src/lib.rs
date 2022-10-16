@@ -4,20 +4,19 @@ mod entity;
 mod error;
 mod factory;
 
-use dependency::CategoryDependency;
-
-pub use crate::dependency::CategoryRepository;
-pub use crate::entity::CategoryEntity;
-pub use crate::entity::CategorySaveEntity;
-pub use crate::error::Error as CategoryError;
-use crate::factory::CategoryFactory;
+pub use dependency::CategoryDependency;
+pub use dependency::repository::CategoryRepository;
+pub use entity::CategoryEntity;
+pub use entity::CategorySaveEntity;
+use error::Error as CategoryError;
+use factory::CategoryFactory;
 
 pub struct CategoryFacade<'a> {
     category_factory: CategoryFactory<'a>,
 }
 
 impl<'a> CategoryFacade<'a> {
-    pub fn new(category_dependency: CategoryDependency<'a>) -> Self {
+    pub fn new(category_dependency: &'a CategoryDependency) -> Self {
         Self {
             category_factory: CategoryFactory::new(category_dependency)
         }

@@ -1,9 +1,9 @@
 #[derive(Debug)]
 pub struct CategorySaveEntity {
-    id: Option<u64>,
-    title: Option<String>,
-    slug: Option<String>,
-    order: Option<u64>,
+    pub id: Option<u64>,
+    pub title: Option<String>,
+    pub slug: Option<String>,
+    pub order: Option<u64>,
 }
 
 #[derive(Debug)]
